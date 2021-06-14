@@ -1,0 +1,308 @@
+/* pallet */
+/* 
+    #EBF5DF - HONEYDEW
+    #BAD4AA - TEA GREEN
+    #D4D4AA - PALE SPRING BUD
+    #EDB458 - SUNRAY
+*/
+
+/* font family */
+/* Baloo Tammudu 2 */
+
+body {
+  font-family: "Baloo Tammudu 2", cursive;
+  background-color: #ebf5df;
+  border: 1px solid #bad4aa;
+  animation: fadeInAnimation ease 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px;
+  background-color: #bad4aa;
+}
+
+.colour-line {
+  display: block;
+  background: rgb(186, 212, 170);
+  background: linear-gradient(
+    90deg,
+    rgba(186, 212, 170, 1) 49%,
+    rgba(235, 245, 223, 1) 100%
+  );
+  content: "";
+  width: 100%;
+  height: 0.5rem;
+}
+
+.site-name {
+  margin: 5px;
+  padding: 0px 15px;
+}
+
+.big-site-name {
+  display: none;
+  font-family: "Roboto", sans-serif;
+  text-decoration: underline;
+}
+
+.nav-option {
+  margin: 5px;
+  padding: 10px 10px 0px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #161616;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.nav-option:hover {
+  color: #edb458;
+  background-color: #658b4d;
+  cursor: pointer;
+}
+
+.hero-view {
+  text-align: center;
+}
+
+.splash-text-desktop {
+  display: none;
+}
+
+/* add height: 90vh; to desktop view */
+
+.hero-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.hero-img {
+  width: 80%;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* .splash-text {
+    margin: 20px;
+    text-align: right;
+    font-size: xx-large;
+} */
+
+.picto {
+  font-size: 150%;
+  margin-right: 5%;
+  padding-right: 10px;
+}
+
+.s-container {
+  text-align: center;
+}
+
+.s-container p {
+  padding: 10px;
+}
+
+.skills-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5% 5% 0% 5%;
+  margin-left: 15px;
+}
+
+.about-main-section {
+  padding-left: 7px;
+}
+
+.about-title {
+  text-decoration: underline;
+  text-decoration-color: #edb458;
+}
+
+/* tablet view */
+
+@media (min-width: 545px) {
+  .site-name {
+    display: none;
+  }
+
+  .big-site-name {
+    display: inline;
+  }
+
+  .hero-img {
+    width: 70%;
+  }
+
+  .skills-section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .splash-text {
+    font-size: 28px;
+  }
+
+  .s-container {
+    width: 30%;
+  }
+
+  .s-container p {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .big-title {
+    margin: auto;
+  }
+
+  .splash-text-desktop {
+    display: none;
+  }
+}
+
+/* desktop view */
+
+@media (min-width: 1024px) {
+  .splash-text {
+    display: none;
+  }
+
+  .splash-text-desktop {
+    display: inline;
+    color: #d4d4aa;
+    font-size: 30px;
+    margin-top: auto;
+    max-width: 575px;
+    text-align: left;
+  }
+
+  .hero-view {
+    background: rgb(22, 22, 22);
+    background: linear-gradient(
+      175deg,
+      rgba(22, 22, 22, 1) 12%,
+      rgba(7, 7, 7, 1) 100%
+    );
+    display: flex;
+    justify-content: space-around;
+    margin: 1%;
+    padding: 1%;
+  }
+
+  .hero-img {
+    width: auto;
+    box-shadow: 3px 3px 3px 3px #161616 inset 3px 3px 3px 3px #161616;
+    margin: 0;
+  }
+
+  .about-main-section {
+    max-width: 800px;
+    padding-left: 5%;
+  }
+}
+
+/* clipped from w3 schools */
+
+ul {
+  list-style: none; /* Remove default bullets */
+}
+
+ul li::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #edb458;
+  font-weight: bold;
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+footer {
+  display: flex;
+  background-color: gray;
+}
+
+footer p {
+  align-items: center;
+  justify-content: center;
+  color: honeydew;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.contact-modal {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.modal-window {
+  max-width: 700px;
+  background-color: #ebf5df;
+  padding: 10px;
+  text-align: center;
+  border: 3px solid #edb458;
+  border-radius: 5px;
+  transition: fadeInAnimation ease-in-out 0.5s;
+}
+
+.x-img {
+  width: 15px;
+  height: 15px;
+  margin: 0%;
+  padding: 0%;
+  float: right;
+  cursor: pointer;
+}
+
+.modal-inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.small-field {
+  margin: 5px 10px;
+}
+
+.discreet-text {
+  font-style: italic;
+  color: gray;
+}
+
+.twitter-link {
+  font-style: none;
+  color: #161616;
+}
+
+.footer-note {
+  font-weight: bold;
+}
