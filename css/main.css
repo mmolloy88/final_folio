@@ -31,7 +31,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 15px;
+  padding: 10px 15px;
   background-color: #bad4aa;
 }
 
@@ -153,6 +153,7 @@ header {
   .skills-section {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .splash-text {
@@ -284,10 +285,10 @@ footer p {
   cursor: pointer;
 }
 
-.modal-inputs {
+/* .modal-inputs {
   display: flex;
   flex-direction: column;
-}
+} */
 
 .small-field {
   margin: 5px 10px;
