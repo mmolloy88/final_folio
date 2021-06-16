@@ -135,6 +135,18 @@ header {
   text-decoration-color: #edb458;
 }
 
+.map-img {
+  display: none;
+}
+
+.right-padded {
+  padding-right: 5px;
+}
+
+.centered {
+  text-align: center;
+}
+
 /* tablet view */
 
 @media (min-width: 545px) {
@@ -152,7 +164,7 @@ header {
 
   .skills-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
   }
 
@@ -180,11 +192,32 @@ header {
   .splash-text-desktop {
     display: none;
   }
+
+  .padded {
+    padding: 20px 0px;
+  }
+
+  .map-img {
+    display: block;
+    outline: 1px solid #d4d4aa;
+    width: 70%;
+    height: 70%;
+  }
+
+  .burb-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .burb-list {
+    padding-left: 10px;
+  }
 }
 
 /* desktop view */
 
-@media (min-width: 1024px) {
+@media (min-width: 1023px) {
   .splash-text {
     display: none;
   }
@@ -220,6 +253,14 @@ header {
   .about-main-section {
     max-width: 800px;
     padding-left: 5%;
+  }
+
+  .padded {
+    padding: 0px;
+  }
+
+  .s-container {
+    width: 26%;
   }
 }
 
