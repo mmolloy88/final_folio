@@ -264,6 +264,17 @@ header {
   .s-container {
     width: 26%;
   }
+
+  .about-body {
+    background-color: #ffffff;
+    opacity: 0.2;
+    background-image: repeating-radial-gradient(
+        circle at 0 0,
+        transparent 0,
+        #ffffff 10px
+      ),
+      repeating-linear-gradient(#bad4aa55, #bad4aa);
+  }
 }
 
 /* clipped from w3 schools */
