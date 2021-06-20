@@ -266,14 +266,14 @@ header {
   }
 
   .about-body {
-    background-color: #ffffff;
+    /* background-color: #ffffff;
     opacity: 0.2;
     background-image: repeating-radial-gradient(
         circle at 0 0,
         transparent 0,
         #ffffff 10px
       ),
-      repeating-linear-gradient(#bad4aa55, #bad4aa);
+      repeating-linear-gradient(#bad4aa55, #bad4aa); */
   }
 }
 
