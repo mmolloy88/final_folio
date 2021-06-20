@@ -55,9 +55,12 @@ header {
 
 .big-site-name {
   display: none;
-  font-family: "Roboto", sans-serif;
   text-decoration: underline;
 }
+
+/* .fancy-font {
+  font-family: "EB Garamond", serif;
+} */
 
 .nav-option {
   margin: 5px;
@@ -263,17 +266,6 @@ header {
 
   .s-container {
     width: 26%;
-  }
-
-  .about-body {
-    /* background-color: #ffffff;
-    opacity: 0.2;
-    background-image: repeating-radial-gradient(
-        circle at 0 0,
-        transparent 0,
-        #ffffff 10px
-      ),
-      repeating-linear-gradient(#bad4aa55, #bad4aa); */
   }
 }
 
